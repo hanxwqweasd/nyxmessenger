@@ -1,0 +1,12 @@
+{
+  "name": "Nyx Messenger",
+  "short_name": "Nyx",
+  "description": "Приватный мессенджер для Android и ПК.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050713",
+  "theme_color": "#050713",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

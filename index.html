@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nyx Messenger — приватный мессенджер для Android и ПК</title>
+  <meta name="description" content="Nyx Messenger — приватные чаты, каналы, группы, боты, избранное, истории и desktop-клиент в чистом 3D-интерфейсе.">
+  <meta name="theme-color" content="#050713">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nyx Messenger">
+  <meta property="og:description" content="Приватный мессенджер с красивым 3D-интерфейсом, Android-приложением и desktop-клиентом.">
+  <meta property="og:image" content="assets/og-preview.svg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="page-light page-light-one" aria-hidden="true"></div>
+  <div class="page-light page-light-two" aria-hidden="true"></div>
+  <div class="fine-noise" aria-hidden="true"></div>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <div class="site">
+    <header class="header" data-reveal>
+      <a class="brand magnetic" href="#top" aria-label="Nyx Messenger">
+        <span class="brand-symbol" aria-hidden="true"><span></span></span>
+        <span class="brand-name">Nyx</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#product">Продукт</a>
+        <a href="#interface">Интерфейс</a>
+        <a href="#security">Защита</a>
+        <a href="#desktop">ПК-версия</a>
+        <a href="#download">Скачать</a>
+      </nav>
+      <a class="header-action magnetic" href="#download">Установить</a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Nyx Messenger">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span></span> Новый приватный мессенджер</p>
+          <h1>Общение, которое выглядит аккуратно и ощущается быстрым.</h1>
+          <p class="lead">Nyx соединяет личные чаты, каналы, группы, ботов, избранное, истории и desktop-клиент в едином интерфейсе. Сайт показывает не абстрактную идею, а настоящий продукт: ровная сетка, чистые панели, понятные действия и спокойная 3D-глубина.</p>
+          <div class="hero-actions">
+            <a class="button button-primary magnetic" href="https://github.com/hanxwqweasd/12312323qwe/releases/download/v1.0.0/nyx-android.apk" target="_blank" rel="noopener noreferrer" aria-label="Скачать Nyx для Android">
+              <span class="button-shine" aria-hidden="true"></span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
+              <span>Скачать Android</span>
+            </a>
+            <a class="button button-ghost magnetic" href="#desktop" aria-label="Посмотреть desktop-клиент Nyx">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4zM9 21h6m-3-5v5"/></svg>
+              <span>ПК-клиент</span>
+            </a>
+          </div>
+          <div class="trust-row" aria-label="Преимущества Nyx">
+            <div><strong>Android</strong><span>прямой APK</span></div>
+            <div><strong>Desktop</strong><span>отдельный клиент</span></div>
+            <div><strong>E2E</strong><span>ключи на устройстве</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="product-stage" data-tilt>
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="orbit orbit-three" aria-hidden="true"></div>
+            <div class="stage-label label-left">Private rooms</div>
+            <div class="stage-label label-right">Bot Studio</div>
+            <div class="stage-label label-bottom">Saved space</div>
+
+            <article class="desktop-device glass-panel" aria-label="Макет desktop-интерфейса Nyx">
+              <div class="window-bar">
+                <span></span><span></span><span></span>
+                <b>Nyx Desktop</b>
+              </div>
+              <div class="desktop-grid">
+                <aside class="desktop-rail" aria-hidden="true">
+                  <button class="rail-control active"><svg viewBox="0 0 24 24"><path d="M5 6h14v9H8l-3 3z"/></svg></button>
+                  <button class="rail-control"><svg viewBox="0 0 24 24"><path d="M4 12 20 5l-4 14-4-5-5 3z"/></svg></button>
+                  <button class="rail-control"><svg viewBox="0 0 24 24"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3 20c.6-3.5 2.4-5 5-5s4.4 1.5 5 5M11 20c.6-3.5 2.4-5 5-5s4.4 1.5 5 5"/></svg></button>
+                  <button class="rail-control"><svg viewBox="0 0 24 24"><path d="m12 4 2.3 4.8 5.3.7-3.8 3.7.9 5.2-4.7-2.5-4.7 2.5.9-5.2-3.8-3.7 5.3-.7z"/></svg></button>
+                </aside>
+                <section class="desktop-list" aria-hidden="true">
+                  <div class="search-line"><span></span></div>
+                  <div class="dialog-card active"><i></i><div><b>Design Room</b><span>Макет принят</span></div><em>now</em></div>
+                  <div class="dialog-card"><i></i><div><b>Private Space</b><span>Новый ключ</span></div><em>12:40</em></div>
+                  <div class="dialog-card"><i></i><div><b>Build Channel</b><span>Пост готов</span></div><em>11:18</em></div>
+                  <div class="dialog-card"><i></i><div><b>Nyx Bot</b><span>Команда выполнена</span></div><em>10:52</em></div>
+                </section>
+                <section class="desktop-chat" aria-hidden="true">
+                  <div class="chat-title"><i></i><div><b>Design Room</b><span>3 участника онлайн</span></div></div>
+                  <div class="message left">Проверил экран. Отступы ровные, кнопки на одной линии.</div>
+                  <div class="message right">Добавляю финальную сцену и чистые состояния.</div>
+                  <div class="message left small">Файлы синхронизируются.</div>
+                  <div class="typing"><i></i><i></i><i></i></div>
+                  <div class="message-input"><span>Сообщение</span><button aria-label="Отправить"><svg viewBox="0 0 24 24"><path d="M4 12 20 5l-4 14-4-5-5 3z"/></svg></button></div>
+                </section>
+              </div>
+            </article>
+
+            <article class="phone-device glass-panel" aria-label="Макет мобильного интерфейса Nyx">
+              <div class="phone-notch"></div>
+              <div class="phone-head"><b>Nyx</b><span></span></div>
+              <div class="story-strip"><i></i><i></i><i></i><i></i></div>
+              <div class="phone-row"><b></b><span></span></div>
+              <div class="phone-row wide"><b></b><span></span></div>
+              <div class="saved-card"><strong>Saved</strong><span>Файлы, сообщения, голосовые, ссылки</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Возможности Nyx">
+        <div class="ticker-track">
+          <span>Личные чаты</span><span>Каналы</span><span>Группы</span><span>Истории</span><span>Боты</span><span>Избранное</span><span>Desktop</span><span>Шифрование</span><span>Права доступа</span><span>Бизнес-профиль</span>
+          <span>Личные чаты</span><span>Каналы</span><span>Группы</span><span>Истории</span><span>Боты</span><span>Избранное</span><span>Desktop</span><span>Шифрование</span><span>Права доступа</span><span>Бизнес-профиль</span>
+        </div>
+      </section>
+
+      <section class="section product" id="product">
+        <div class="section-heading" data-reveal>
+          <p class="kicker">Продукт</p>
+          <h2>Не набор экранов, а цельная система общения.</h2>
+          <p>Каждый раздел показывает реальную пользу: где общаться, где публиковать, где хранить важное, где подключать автоматизацию и как держать профиль под контролем.</p>
+        </div>
+        <div class="product-map" data-reveal>
+          <article class="map-card primary" data-tilt>
+            <span class="line-icon"><svg viewBox="0 0 24 24"><path d="M5 6h14v9H8l-3 3z"/></svg></span>
+            <h3>Чаты</h3>
+            <p>Сообщения, файлы, голосовые, реакции и синхронизация между устройствами.</p>
+          </article>
+          <article class="map-card" data-tilt>
+            <span class="line-icon"><svg viewBox="0 0 24 24"><path d="M4 12 20 5l-4 14-4-5-5 3z"/></svg></span>
+            <h3>Каналы</h3>
+            <p>Публикации, участники, администраторы, оформление и права доступа.</p>
+          </article>
+          <article class="map-card" data-tilt>
+            <span class="line-icon"><svg viewBox="0 0 24 24"><path d="M7 8h10M7 12h7M5 20h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/></svg></span>
+            <h3>Боты</h3>
+            <p>Команды, webhook, сценарии поддержки и автоматизация внутри Nyx.</p>
+          </article>
+          <article class="map-card" data-tilt>
+            <span class="line-icon"><svg viewBox="0 0 24 24"><path d="m12 4 2.3 4.8 5.3.7-3.8 3.7.9 5.2-4.7-2.5-4.7 2.5.9-5.2-3.8-3.7 5.3-.7z"/></svg></span>
+            <h3>Избранное</h3>
+            <p>Отдельное пространство для сообщений, ссылок, видео, фото и документов.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section interface" id="interface">
+        <div class="section-heading narrow" data-reveal>
+          <p class="kicker">Интерфейс</p>
+          <h2>Аккуратная визуальная система без случайных деталей.</h2>
+          <p>Сетка выдержана по вертикали и горизонтали. Заголовки не ломают ритм, карточки одинаково читаются, а 3D-движение не мешает нажимать на кнопки.</p>
+        </div>
+        <div class="interface-board" data-reveal>
+          <div class="board-glow" aria-hidden="true"></div>
+          <div class="board-column left-column">
+            <div class="board-card tall" data-tilt>
+              <h3>Профиль</h3>
+              <div class="profile-preview"><span></span><b></b><i></i><i></i></div>
+            </div>
+            <div class="board-card" data-tilt>
+              <h3>Бизнес</h3>
+              <p>Публичные контакты, описание, автоответы и статус профиля.</p>
+            </div>
+          </div>
+          <div class="board-main" data-tilt>
+            <div class="board-window-bar"><span></span><span></span><span></span><b>Clean conversation</b></div>
+            <div class="conversation-lines"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="clean-input"></div>
+          </div>
+          <div class="board-column right-column">
+            <div class="board-card" data-tilt>
+              <h3>Файлы</h3>
+              <p>Документы, медиа и сохранённые материалы в одном месте.</p>
+            </div>
+            <div class="board-card tall" data-tilt>
+              <h3>Права</h3>
+              <div class="permission-list"><span></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section security" id="security">
+        <div class="security-copy" data-reveal>
+          <p class="kicker">Защита</p>
+          <h2>Приватность должна быть понятной без длинных объяснений.</h2>
+          <p>Пользователь видит, где открыт аккаунт, какие устройства подключены, кто может управлять каналом, какие действия доступны администраторам и что хранится в избранном.</p>
+          <div class="security-list">
+            <div><strong>Устройства</strong><span>контроль активных сессий</span></div>
+            <div><strong>Ключи</strong><span>восстановление и перенос доступа</span></div>
+            <div><strong>Права</strong><span>админ управляет только своим пространством</span></div>
+          </div>
+        </div>
+        <div class="security-core" data-reveal data-tilt>
+          <div class="core-ring ring-a"></div>
+          <div class="core-ring ring-b"></div>
+          <div class="core-ring ring-c"></div>
+          <div class="core-center"><span>Secure Core</span><b>Nyx</b></div>
+          <div class="core-note note-a">Identity</div>
+          <div class="core-note note-b">Sessions</div>
+          <div class="core-note note-c">E2E</div>
+          <div class="core-note note-d">Access</div>
+        </div>
+      </section>
+
+      <section class="section desktop" id="desktop">
+        <div class="section-heading" data-reveal>
+          <p class="kicker">ПК-версия</p>
+          <h2>Desktop-клиент выглядит как рабочая программа, а не мобильный экран в рамке.</h2>
+          <p>На большом экране Nyx раскрывается через три рабочие зоны: список пространств, переписка и правая панель профиля. Пользователь не видит технических ссылок, а сразу попадает в продукт.</p>
+        </div>
+        <div class="desktop-showcase" data-reveal>
+          <div class="desktop-panel" data-tilt>
+            <div class="desktop-panel-bar"><span></span><span></span><span></span><b>Nyx Messenger</b></div>
+            <div class="desktop-panel-layout">
+              <aside class="app-nav"><i class="active"></i><i></i><i></i><i></i><i></i></aside>
+              <aside class="app-list"><div></div><span class="active"></span><span></span><span></span><span></span><span></span></aside>
+              <main class="app-chat"><div class="app-title"></div><i></i><i></i><i></i><i></i><div class="app-composer"></div></main>
+              <aside class="app-side"><div></div><span></span><span></span><span></span></aside>
+            </div>
+          </div>
+          <div class="desktop-points">
+            <div><strong>Слева навигация</strong><span>чаты, каналы, группы, боты и избранное доступны без перегруза.</span></div>
+            <div><strong>Центр для переписки</strong><span>сообщения, вложения и действия находятся в естественном месте.</span></div>
+            <div><strong>Справа профиль</strong><span>участники, файлы, администраторы и настройки видны отдельно.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section scenes" aria-label="Сценарии использования Nyx">
+        <div class="section-heading centered" data-reveal>
+          <p class="kicker">Сценарии</p>
+          <h2>Nyx должен быть понятен за несколько секунд.</h2>
+          <p>Человек видит не обещания, а конкретные ситуации: написать, опубликовать, сохранить, автоматизировать, продолжить на ПК.</p>
+        </div>
+        <div class="scene-grid">
+          <article class="scene-card" data-reveal data-tilt><b>01</b><h3>Личный чат</h3><p>Отправить сообщение, файл или голосовое и увидеть доставку на других устройствах.</p></article>
+          <article class="scene-card" data-reveal data-tilt><b>02</b><h3>Канал</h3><p>Опубликовать пост, посмотреть участников и назначить администратора.</p></article>
+          <article class="scene-card" data-reveal data-tilt><b>03</b><h3>Бот</h3><p>Создать токен, настроить команды и подключить webhook к сценарию.</p></article>
+          <article class="scene-card" data-reveal data-tilt><b>04</b><h3>Избранное</h3><p>Сохранить важный файл, ссылку, сообщение или медиа в личное пространство.</p></article>
+        </div>
+      </section>
+
+      <section class="section download" id="download">
+        <div class="download-card" data-reveal data-tilt>
+          <div class="download-orb" aria-hidden="true"></div>
+          <div class="download-copy">
+            <p class="kicker">Скачать</p>
+            <h2>Сначала установи Android, затем подключи ПК-клиент.</h2>
+            <p>Nyx выглядит цельно на телефоне и на компьютере. Android-приложение можно скачать прямой ссылкой, а desktop-клиент подходит для работы с чатами, каналами и ботами на большом экране.</p>
+          </div>
+          <div class="download-actions">
+            <a class="button button-primary magnetic" href="https://github.com/hanxwqweasd/12312323qwe/releases/download/v1.0.0/nyx-android.apk" target="_blank" rel="noopener noreferrer" aria-label="Скачать Android APK">
+              <span class="button-shine" aria-hidden="true"></span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
+              <span>Скачать Android</span>
+            </a>
+            <a class="button button-ghost magnetic" href="https://github.com/hanxwqweasd/12312323qwe/releases" target="_blank" rel="noopener noreferrer" aria-label="Открыть страницу загрузки Nyx для Windows">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4zM9 21h6m-3-5v5"/></svg>
+              <span>Windows installer</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="brand footer-brand" href="#top" aria-label="Nyx Messenger"><span class="brand-symbol" aria-hidden="true"><span></span></span><span class="brand-name">Nyx</span></a>
+        <p>Приватный мессенджер для личного общения, каналов, групп, ботов и desktop-работы.</p>
+      </div>
+      <nav aria-label="Документы">
+        <a href="privacy.html">Приватность</a>
+        <a href="terms.html">Условия</a>
+        <a href="platform-rules.html">Правила</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050713"/><stop offset=".55" stop-color="#0b1230"/><stop offset="1" stop-color="#111042"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#59e4ff"/><stop offset=".5" stop-color="#628dff"/><stop offset="1" stop-color="#9e72ff"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="45"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="250" cy="110" r="190" fill="#59e4ff" opacity=".18" filter="url(#blur)"/>
+  <circle cx="980" cy="360" r="230" fill="#9e72ff" opacity=".22" filter="url(#blur)"/>
+  <rect x="646" y="112" width="410" height="286" rx="34" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/>
+  <rect x="676" y="152" width="96" height="206" rx="20" fill="rgba(255,255,255,.09)"/>
+  <rect x="796" y="152" width="220" height="42" rx="18" fill="rgba(98,141,255,.35)"/>
+  <rect x="796" y="214" width="160" height="34" rx="17" fill="rgba(255,255,255,.12)"/>
+  <rect x="840" y="268" width="176" height="34" rx="17" fill="rgba(158,114,255,.38)"/>
+  <rect x="720" y="360" width="160" height="250" rx="38" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.18)"/>
+  <text x="98" y="235" fill="#fff" font-family="Inter, Arial" font-size="86" font-weight="800" letter-spacing="-5">Nyx Messenger</text>
+  <text x="102" y="310" fill="#b8c3e6" font-family="Inter, Arial" font-size="34">Приватный мессенджер для Android и ПК</text>
+  <rect x="102" y="366" width="245" height="62" rx="20" fill="url(#accent)"/>
+  <text x="134" y="407" fill="#fff" font-family="Inter, Arial" font-size="23" font-weight="800">Скачать Android</text>
+</svg>
